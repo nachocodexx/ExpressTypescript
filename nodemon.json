@@ -1,0 +1,7 @@
+{
+    "watch":"src/",
+    "ext":"ts",
+    "ignore":["./dist","node_modules"],
+    "exec":"yarn build && node ./dist/bundle.js"
+
+}
