@@ -1,13 +1,17 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
-        "lib": [ "es2015" ],
+        "lib": [ "es2015","es2017","dom"],
         "allowJs": true,
-        "target": "es5",
-        "module":"es6",
+        "target": "es6",
+        "module":"commonjs",
         "noImplicitAny":true,
         "moduleResolution": "node",
-        "sourceMap": true
-    }
+        "sourceMap": true,
+        "experimentalDecorators": true,
+    },
+    "exclude": [
+        "./node_modules"
+    ]
 
 }
