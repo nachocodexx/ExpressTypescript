@@ -1,6 +1,6 @@
 export default {
     PORT:process.env.PORT || 7000,
-    URI: process.env.MONGODB_URI || 'mongodb://localhost:27017/testdb2',
+    URI: process.env.MONGODB_URI || 'mongodb://localhost:27017/doalldb',
     MONGO_CONFIG:{
         user:'admin',
         pass:'123456',
