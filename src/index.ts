@@ -1,6 +1,6 @@
 
 
-import server from './server'
+import server from './app'
 import {connect} from './db/'
 import {waterfall,AsyncResultCallback} from 'async'
 
