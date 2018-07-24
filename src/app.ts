@@ -7,7 +7,7 @@ import {Routes} from './interfaces/'
 import * as express from 'express'
 
 
-export default class App {
+class App {
     protected app:Application
     protected port:number
     protected hostname:string
@@ -49,3 +49,5 @@ export default class App {
 
 
 }
+
+export default new App(7000,'0.0.0.0')
