@@ -1,25 +1,27 @@
-import * as mongoose from 'mongoose'
+import {Schema,model, SchemaOptions} from 'mongoose'
 import {IUserDocument} from './interfaces/user'
 
 
+const options:SchemaOptions={
+    toJSON:{virtuals:true},
+    toObject:{virtuals:true}
+}
 
-const UserSchema:mongoose.Schema=new mongoose.Schema({
+const UserSchema:Schema=new Schema({
     firstName:{type:String,required:true},
     lastName:{type:String,required:true},
     age:{type:Number,required:true}
 
-})
+},options)
 
-UserSchema.methods.fullName=function():string{
+UserSchema.virtual('fullname').get(function(){
     return `${this.firstName} ${this.lastName}`
-}
-
-UserSchema.pre('save',function(next:Function){
-    console.log("FAKE SAVED!");
-    
-    next()
-
 })
 
 
-export const User:mongoose.Model<IUserDocument>= mongoose.model<IUserDocument>('User',UserSchema)
+UserSchema.pre('save',function(next:Function){    
+    next()
+})
+
+
+export default model<IUserDocument>('User',UserSchema)

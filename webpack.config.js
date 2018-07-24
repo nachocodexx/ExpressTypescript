@@ -1,6 +1,6 @@
 const path = require('path')
 const nodeExternals = require('webpack-node-externals')
-const WebpackShellPlugin=require('webpack-shell-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 const config={
@@ -25,7 +25,11 @@ const config={
         filename:'bundle.js',
         path:path.resolve(__dirname,'dist')
     },
-    plugins:[]
+    plugins:[
+        new HtmlWebpackPlugin({
+            title:'My App',
+        })
+    ]
 
 
 

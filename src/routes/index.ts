@@ -1,4 +1,4 @@
-import {Routes} from '../interfaces/'
+import {Routes} from '../interfaces'
 import ApiRouter from './api'
  
 

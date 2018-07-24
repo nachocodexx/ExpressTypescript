@@ -1,6 +1,6 @@
 import {Application} from 'express'
-import routes from './routes/'
-import {Routes} from './interfaces/'
+import routes from './routes'
+import {Routes} from './interfaces'
 
  
 
