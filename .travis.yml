@@ -4,4 +4,10 @@ node_js:
 
 services: mongodb
 
-sudo: enabled
+sudo: false
+
+install:
+  - npm install
+  
+test: 
+  - npm run test  
