@@ -1,6 +1,7 @@
 import {Application} from 'express'
 import routes from './routes'
 import {Routes} from './interfaces'
+import cors from './cors'
 
  
 
@@ -26,7 +27,9 @@ class App {
         this.app.use(express.urlencoded({extended:true}))
         this.app.set('port',this.port)
         this.app.set('hostname',this.hostname)
-
+        //CORS
+        this.app.use(cors)
+            
         //Routes
         this.setRoutes(routes)
     }
