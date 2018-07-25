@@ -18,5 +18,13 @@ npm install
 ```
 ### Running test
 ```
+yarn test 
+```
+### Running dev mode
+```
 yarn dev 
+```
+### Production mode
+```
+yarn build 
 ```

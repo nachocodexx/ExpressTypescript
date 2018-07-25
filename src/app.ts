@@ -12,9 +12,10 @@ class App {
     protected app:Application
     protected port:number
     protected hostname:string
-    
+    public isRun:boolean
     
     constructor(port:number,hostname:string){
+        this.isRun=false
         this.app=express()
         this.port=port
         this.hostname=hostname
@@ -46,6 +47,7 @@ class App {
                 console.error(`ERROOOR! ${e}`);
             }
             console.log(`Server running on port ${this.port}`);
+            this.isRun=true
             done()
         })
     }
