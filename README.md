@@ -1,5 +1,8 @@
+
 # Express-Typescript
 This is a express.js server using Typescript.
+
+[![Build Status](https://travis-ci.org/NachoCodeX/ExpressTypescript.svg?branch=master)](https://travis-ci.org/NachoCodeX/ExpressTypescript)
 
 ## Getting Started
 
