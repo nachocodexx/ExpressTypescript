@@ -1,5 +1,5 @@
 language: node_js
 node_js:
-  "v10.3.0"
+  - "v10.3.0"
 
 sudo: enabled
