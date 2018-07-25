@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf ./dist",
-    "test": "jest --watchAll --verbose",
+    "test": "jest --verbose",
     "dev": "nodemon",
     "build": "yarn clean && webpack --config ./webpack.config.js"
   },
