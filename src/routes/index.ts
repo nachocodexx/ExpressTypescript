@@ -1,10 +1,6 @@
-import {Routes} from '../interfaces'
-import ApiRouter from './api'
- 
+import { Routes } from "../index.d";
+import ApiRouter from "./api";
 
-const routes:Array<Routes>=[
-    {name:'api',routes:ApiRouter}
-]
+const routes: Routes[] = [{ name: "api", routes: ApiRouter }];
 
-
-export default routes
+export default routes;

@@ -1,9 +1,9 @@
-import {Router} from 'express'
-import {getUser,signUp} from '../controllers/api'
-const api = Router()
+import { Router } from "express";
+import { getUser, signUp, getUsers } from "../controllers/api";
+const api = Router();
 
+api.get("/users", getUsers);
+api.get("/user/:_id", getUser);
+api.post("/user", signUp);
 
-api.get('/user/:_id',getUser)
-api.post('/user',signUp)
-
-export default api
+export default api;

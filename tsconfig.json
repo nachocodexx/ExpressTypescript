@@ -1,18 +1,15 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist",
-        "lib": [ "es2015","es2017","dom"],
-        "allowJs": true,
-        "target": "es6",
-        "module":"commonjs",
-        "noImplicitAny":true,
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "experimentalDecorators": true,
-    },
-    "exclude": [
-        "./node_modules",
-        "./src/__test__/*"
-    ]
-
+  "compilerOptions": {
+    "outDir": "./dist",
+    "lib": ["es2015", "es2017", "dom"],
+    "allowJs": true,
+    "target": "es6",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "exclude": ["./node_modules", "./src/__test__/*"]
 }
